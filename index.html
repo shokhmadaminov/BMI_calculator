@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI kalkulyator || bosh sahifa</title>
+    <link rel="shortcut icon" href="./images/human.png" type="image/x-icon">
+    <!-- FONT AWESOME SDNJS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="container__title">Assalomu Alaykum! BMI kalkulyatorga hush kelibsiz.<br>Keling sizni bo'yingiz og'irligingizga mos keladimi bilib olamiz.</h2>
+        <form id="form">
+            <label for="ism" class="container__label">Ismingizni kiriting:</label><br>
+            <input type="text" placeholder="ismingiz" id="ism" class="container__input" required autocomplete="off"><br>
+
+            <label for="vesi" class="container__label">Og'irligingizni kiriting</label><br>
+            <input type="text" placeholder="Masalan: 60" id="vesi" class="container__input" required autocomplete="off"><br>
+
+            <label for="boyi" class="container__label">Bo'yingizni kiriting:</label><br>
+            <input type="text" placeholder="Masalan: 1.63" id="boyi" class="container__input" required autocomplete="off"><br>
+
+            <button id="container_btn" class="container__btn">Natija</button>
+        </form>
+    </div>
+
+    <div class="modal hidden">
+        <div class="modal-title">
+            <h3 class="">Natija</h3>
+            <i class="timeModal fas fa-times"></i>
+        </div>
+        <p class="modal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque suscipit nesciunt ratione rerum eaque in perferendis quibusdam iusto autem magnam?</p>
+        <a id="semirish" class="modal_btn hidden" href="https://med360.uz/salomatlik/semirish/" target="_blank">ilova...</a>
+        <a id="ozish" class="modal_btn hidden" href="https://avitsenna.uz/ozish-sirlari-l/#gsc.tab=0" target="_blank">ilova...</a>
+        <a id="mushak" class="modal_btn hidden" href="https://mymedic.uz/erkaklar-uchun/mushaklarni-chiqarish-va-rivojlantirish/" target="_blank">ilova...</a>
+    </div>
+
+    <div class="dark-background hidden"></div>
+
+    <script src="scripti.js"></script>
+</body>
+</html>
